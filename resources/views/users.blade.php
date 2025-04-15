@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Import Data</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -18,14 +19,14 @@
                     @csrf
                     <input type="file" name="file" class="form-control">
                     <br>
-                    <button class="btn btn-dark">Import</button>
+                    <button class="fa-solid far fa-file-excel btn btn-dark"> Import</button>
                 </form>
 
                 <table class="table tavle-bordered mt-3">
                     <tr>
                         <th colspan="3">
                             List of Data
-                            <a href="{{ route('users.export') }}" class="btn btn-danger float-end">Export</a>
+                            <a href="{{ route('users.export') }}" class="fa-solid far fa-file-excel btn btn-danger float-end"> Export</a>
                         </th>
                     </tr>
                     <tr>
