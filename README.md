@@ -64,3 +64,23 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Import Data
+
+- composer require psr/simple-cache:^1.0 maatwebsite/excel
+
+- php artisan make:import UserImport --model=User
+
+- php artisan make:controller UserController
+
+- php artisan migrate
+
+- php artisan tinker
+
+## Command
+Psy Shell v0.12.8 (PHP 8.2.12 — cli) by Justin Hileman
+
+- User::factory()->count(10)->create()
+
+
